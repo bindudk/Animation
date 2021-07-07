@@ -1,0 +1,118 @@
+head{
+  width: 10px;
+  height: 10px;
+  align-content: center;
+}
+h1{
+  text-align: center;
+}
+body
+{
+  height: 100vh;
+  width: 90vw;
+  background-color:#FFCA7A;
+  display: block;
+  border: groove black;
+
+
+}
+/******************************************code for 1st parent div*****/
+first-box
+{
+
+
+}
+/********************************************water melon*****/
+.melon
+{
+width: 70px;
+height: 70px;
+position: relative;
+padding: 10px 10px;
+animation: WM;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+animation-timing-function: linear;
+}
+@keyframes WM {
+/*10% {left:0vw; right: 100vw;}
+100% {top:100vh;bottom:20vh;}*/
+0% {top:0vh;left:0vh}
+25% {top:0vh;left:80vw}
+50% {top:70vh;left:80vw}
+75% {top:70vh;left:0vw}
+100% {top:0vh;left:0vh}
+}
+/******************************************child div1*****/
+.child-box1
+{
+background-color: #C6B4CE;
+width: 400px;
+height: 200px;
+position: absolute;
+padding: 0 10px;
+animation: I;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+@keyframes I {
+  from{ left: 10vw;}
+  to{right: 20vw; }
+
+}
+p
+{
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  line-height: 1;
+  position: relative;
+  padding: 50px 50px;
+  animation: me;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+  animation-direction: normal;
+
+}
+@keyframes me {
+to { color: red; top:30px; }
+  from {color: blue; bottom: 50px;}
+}
+/************************************************child div2*****/
+/*.child-box2
+{
+  background-color: #B5CDA3;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: auto 150px;
+}*/
+.blossom
+{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  padding: 10px 10px;
+  animation: bloss;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: width 2s;
+}
+@keyframes bloss {
+0% {width: 10vh;}
+100% {width:10vw; }
+}
+
+/**********************************contact div***************/
+.contact
+{
+
+  float: right;
+}
+.i{
+  height: 70px;
+  width: 70px;
+  position: relative;
+  margin:300px 50px 50px auto;
+
+}
